@@ -7,10 +7,10 @@
     <static-sidebar />
 
     <div class="flex flex-col flex-1 w-0 overflow-hidden">
-      <div class="relative z-10 flex flex-shrink-0 h-16 bg-white shadow">
+      <div class="relative z-10 flex flex-shrink-0 h-16 bg-transparent">
         <!-- Open sidebar button -->
         <button
-          class="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
+          class="px-4 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
           aria-label="Open sidebar"
           @click="mobileOpen = true"
         >
@@ -29,15 +29,15 @@
           </svg>
         </button>
 
-        <div class="flex justify-between flex-1 px-4">
+        <div class="flex justify-between flex-1 mr-4 md:px-4">
           <div class="flex flex-1">
-            <div class="flex w-full md:ml-0">
+            <div class="flex items-center w-full md:ml-0">
               <label for="search_field" class="sr-only">Search</label>
               <div
                 class="relative w-full text-gray-400 focus-within:text-gray-600"
               >
                 <div
-                  class="absolute inset-y-0 left-0 flex items-center pointer-events-none"
+                  class="absolute inset-y-0 left-0 flex items-center ml-2 pointer-events-none"
                 >
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path
@@ -49,7 +49,7 @@
                 </div>
                 <input
                   id="search_field"
-                  class="block w-full h-full py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 rounded-md focus:outline-none focus:placeholder-gray-400 sm:text-sm"
+                  class="items-center block w-full py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 border-2 border-gray-200 rounded-lg focus:outline-none focus:placeholder-gray-400 sm:text-sm"
                   placeholder="Search"
                   type="search"
                   autocomplete="off"
@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center md:ml-6">
+          <div class="flex items-center ml-2 md:ml-6">
             <button
               class="p-1 text-gray-400 rounded-full hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:shadow-outline focus:text-gray-500"
               aria-label="Notifications"
@@ -86,17 +86,17 @@
       </div>
 
       <main
-        class="relative z-0 flex-1 py-6 overflow-y-auto focus:outline-none"
+        class="relative z-0 flex-1 py-6 overflow-y-auto md:pr-4 focus:outline-none"
         tabindex="0"
       >
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+        <div class="px-4 mx-auto max-w-7xl">
           <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
         </div>
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+        <div class="px-4 mx-auto max-w-7xl">
           <!-- Replace with your content -->
           <div class="py-4">
             <div
-              class="border-4 border-gray-200 border-dashed rounded-lg h-96"
+              class="bg-white border-4 border-gray-200 border-dashed rounded-lg h-96"
             ></div>
           </div>
           <!-- /End replace -->

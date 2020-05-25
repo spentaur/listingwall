@@ -64,7 +64,7 @@
               <nav class="px-2">
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out bg-gray-100 rounded-md group focus:outline-none focus:bg-gray-200"
+                  class="flex items-center px-2 py-3 text-base font-bold leading-6 text-gray-900 transition duration-150 ease-in-out group focus:outline-none"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-500 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-600"
@@ -83,7 +83,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100"
+                  class="flex items-center px-2 py-3 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 focus:outline-none hover:font-bold focus:text-gray-900"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
@@ -102,7 +102,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100"
+                  class="flex items-center px-2 py-3 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 focus:outline-none hover:font-bold focus:text-gray-900"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
@@ -121,7 +121,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100"
+                  class="flex items-center px-2 py-3 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 focus:outline-none hover:font-bold focus:text-gray-900"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
@@ -140,7 +140,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100"
+                  class="flex items-center px-2 py-3 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 focus:outline-none hover:font-bold focus:text-gray-900"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
@@ -159,7 +159,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex items-center px-2 py-2 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100"
+                  class="flex items-center px-2 py-3 mt-1 text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 focus:outline-none hover:font-bold focus:text-gray-900"
                 >
                   <svg
                     class="w-6 h-6 mr-4 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"

@@ -1,20 +1,20 @@
 <template>
   <div class="hidden md:flex md:flex-shrink-0">
-    <div class="flex flex-col w-64 pt-5 pb-4 bg-white border-r border-gray-200">
+    <div class="flex flex-col w-64 pt-3 pb-4 bg-gray-50">
       <div class="flex items-center flex-shrink-0 px-4">
-        <div class="w-auto h-8 font-mono text-2xl font-bold">
+        <div class="w-auto h-8 text-2xl font-medium text-gray-400 logo-font">
           ListingWall
         </div>
       </div>
-      <div class="flex flex-col flex-1 h-0 mt-5 overflow-y-auto">
+      <div class="flex flex-col flex-1 h-0 mt-10 overflow-y-auto">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
-        <nav class="flex-1 px-2 bg-white">
+        <nav class="flex-1 px-2 bg-gray-50">
           <a
             href="#"
-            class="flex items-center px-2 py-2 text-sm font-medium leading-5 text-gray-900 transition duration-150 ease-in-out bg-gray-100 rounded-md group hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200"
+            class="flex items-center px-2 py-3 text-lg font-bold leading-5 text-gray-800 transition duration-150 ease-in-out group hover:text-gray-900 focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-500 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-600"
+              class="w-8 h-8 mr-3 text-orange-400 transition duration-150 ease-in-out group-hover:text-orange-500 group-focus:text-orange-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -30,10 +30,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-green-400 transition duration-150 ease-in-out group-hover:text-green-600 group-focus:text-green-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -49,10 +49,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-blue-400 transition duration-150 ease-in-out group-hover:text-blue-600 group-focus:text-blue-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -68,10 +68,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-purple-400 transition duration-150 ease-in-out group-hover:text-purple-600 group-focus:text-purple-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -87,10 +87,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-red-400 transition duration-150 ease-in-out group-hover:text-red-600 group-focus:text-red-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -106,10 +106,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-yellow-400 transition duration-150 ease-in-out group-hover:text-yellow-600 group-focus:text-yellow-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -125,10 +125,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-teal-400 transition duration-150 ease-in-out group-hover:text-teal-600 group-focus:text-teal-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -144,10 +144,10 @@
           </a>
           <a
             href="#"
-            class="flex items-center px-2 py-2 mt-1 text-sm font-medium leading-5 text-gray-600 transition duration-150 ease-in-out rounded-md group hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+            class="flex items-center px-2 py-3 mt-1 text-lg font-medium leading-5 text-gray-600 transition duration-150 ease-in-out group hover:text-gray-900 hover:font-bold focus:outline-none"
           >
             <svg
-              class="w-6 h-6 mr-3 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500"
+              class="w-8 h-8 mr-3 text-pink-400 transition duration-150 ease-in-out group-hover:text-pink-600 group-focus:text-pink-600"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
