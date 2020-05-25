@@ -1,74 +1,126 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        listingwall
-      </h1>
-      <h2 class="subtitle">
-        safe, open, local marketplace
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
+  <div class="flex h-screen overflow-hidden bg-gray-50">
+    <!-- Off-canvas menu for mobile -->
+    <mobile-menu :mobile-open.sync="mobileOpen" />
+
+    <!-- Static sidebar for desktop -->
+    <static-sidebar />
+
+    <div class="flex flex-col flex-1 w-0 overflow-hidden">
+      <div class="relative z-10 flex flex-shrink-0 h-16 bg-white shadow">
+        <!-- Open sidebar button -->
+        <button
+          class="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
+          aria-label="Open sidebar"
+          @click="mobileOpen = true"
         >
-          GitHub
-        </a>
+          <svg
+            class="w-6 h-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7"
+            />
+          </svg>
+        </button>
+
+        <div class="flex justify-between flex-1 px-4">
+          <div class="flex flex-1">
+            <div class="flex w-full md:ml-0">
+              <label for="search_field" class="sr-only">Search</label>
+              <div
+                class="relative w-full text-gray-400 focus-within:text-gray-600"
+              >
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pointer-events-none"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  id="search_field"
+                  class="block w-full h-full py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 rounded-md focus:outline-none focus:placeholder-gray-400 sm:text-sm"
+                  placeholder="Search"
+                  type="search"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center md:ml-6">
+            <button
+              class="p-1 text-gray-400 rounded-full hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:shadow-outline focus:text-gray-500"
+              aria-label="Notifications"
+            >
+              <svg
+                class="w-6 h-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <profile-dropdown />
+            </div>
+          </div>
+        </div>
       </div>
+
+      <main
+        class="relative z-0 flex-1 py-6 overflow-y-auto focus:outline-none"
+        tabindex="0"
+      >
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+          <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+        </div>
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+          <!-- Replace with your content -->
+          <div class="py-4">
+            <div
+              class="border-4 border-gray-200 border-dashed rounded-lg h-96"
+            ></div>
+          </div>
+          <!-- /End replace -->
+        </div>
+      </main>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
-
+import MobileMenu from '~/components/MobileMenu.vue'
+import StaticSidebar from '~/components/StaticSidebar.vue'
+import ProfileDropdown from '~/components/ProfileDropdown.vue'
 export default Vue.extend({
   components: {
-    Logo
+    MobileMenu,
+    StaticSidebar,
+    ProfileDropdown
+  },
+  data() {
+    return {
+      mobileOpen: false
+    }
   }
 })
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
